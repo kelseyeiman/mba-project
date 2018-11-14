@@ -1,0 +1,15 @@
+{
+    "name": "mba-lab-project",
+    "description": "",
+    "main": "main.js",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "dependencies": {},
+    "devDependencies": {},
+    "optionalDependencies": {},
+    "licenses": [
+        {}
+    ]
+}

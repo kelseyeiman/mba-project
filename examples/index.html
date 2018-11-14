@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    margin: 0;
+}
+
+div.title h1 {
+    color: #555555;
+    background-color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+div.container-time{
+    margin-bottom: 25px;
+}
+
+div.totalTime {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #555555;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    white-space: nowrap;
+}
+
+li {
+    float: left;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.home {
+    flex: 40;
+    background-color: #2b7489;
+}
+li.news {
+    flex: 30;
+    background-color: #e34c26;
+}
+li.contact {
+    flex: 15;
+    background-color: #f1e05a;
+}
+li.about {
+    flex: 10;
+    background-color: #563d7c;
+}
+</style>
+</head>
+<body>
+
+<div class='container-time'>
+  <div class='title'><h1>Big Sexy Hair -- Due November 10</h1></div>
+  <ul>
+    <li class='home' style='flex: 40'>Home</li>
+    <li class='news' style='flex: 30'>News</li>
+    <li class='contact' style='flex: 15'>Contact</li>
+    <li class='about' style='flex: 10'>About</li>
+  </ul>
+  <div class='totalTime'>Total Time: 18 hours 32 minutes</div>
+</div>
+
+<div class='container-time'>
+  <div class='title'><h1>Energy Shotzz -- Due November 10</h1></div>
+  <ul>
+    <li class='home' style='flex: 80'>Home</li>
+    <li class='news' style='flex: 10'>News</li>
+    <li class='contact' style='flex: 5'>Contact</li>
+    <li class='about' style='flex: 5'>About</li>
+  </ul>
+  <div class='totalTime'>Total Time: 18 hours 32 minutes</div>
+</div>
+
+
+
+</body>
+</html>

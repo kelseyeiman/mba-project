@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+}
+
+div.title h1 {
+    color: #555555;
+    background-color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+div.container-time {
+    margin-bottom: 40px;
+}
+
+div.totalTime {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #555555;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    width: 100%;
+    white-space: nowrap;
+}
+
+li {
+    float: left;
+    display: block;
+    padding: 14px 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+li.fixedtime {
+    background-color: #5f9ea0;
+    color: white;
+    /* filter: brightness(80%); */
+}
+
+li.flextime {
+    background-color: #ff6375;
+    color: black;
+    /* filter: brightness(120%); */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    
+    /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+

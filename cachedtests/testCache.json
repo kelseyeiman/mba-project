@@ -1,0 +1,32 @@
+[
+    {
+        "type":"Fats",
+        "name":"Fats",
+        "numSamples":1
+    },
+    {
+        "type":"Peroxide_Value",
+        "name":"Peroxide Value",
+        "numSamples":6
+    },
+    {
+        "type":"Water_Content",
+        "name":"Water Content",
+        "numSamples":7
+    },
+    {
+        "type":"Fat_Soluble_Vitamins",
+        "name":"Fat Soluble Vitamins",
+        "numSamples":2
+    },
+    {
+        "type":"Vitamin_B12",
+        "name":"Vitamin B12",
+        "numSamples":1
+    },
+    {
+        "type":"Cholesterol",
+        "name":"Cholesterol",
+        "numSamples":3
+    }
+]
