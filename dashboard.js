@@ -16,11 +16,6 @@ this.GetHtml = function (response, responseCloseCallback)
     // TODO - Add hover text
     // TODO - make a better way to differentiate between flex/non-flex ?
     // TODO - allow user to delete a test
-=======
-    // todo - Add a dropdown for creating a new test here
-    // todo - make a better way to differentiate between flex/non-flex ?
-    // todo - allow user to delete a test
->>>>>>> Stashed changes
 
     var testStash = database.GetTests();
     for(index = 0; index < testStash.length; index++)
@@ -42,13 +37,8 @@ function GenerateItemHtml(test)
   for (var index = 0; index < steps.length; index++)
   {
       let listItem = steps[index];
-<<<<<<< Updated upstream
       let stepColor = `test${ index }${listItem.flex_time ? ' isflextime' : ''}`;
       stepBlock += `<li class='${ stepColor }' style='flex: ${ listItem.step_time }'> ${ listItem.step_description }</li>\n`;
-=======
-      let stepscls = `test${ index }${listItem.flex_time ? ' isflextime' : ''}`;
-      stepslistele += `<li class='${ stepscls }' style='flex: ${ listItem.step_time }'> <div class="tooltip">${ listItem.step_description }<span class="tooltiptext">${ listItem.step_description }</span></div></li>\n`;
->>>>>>> Stashed changes
   }
 
   let flex_percent = Math.round(test.total_flextime / test.total_time * 100);
