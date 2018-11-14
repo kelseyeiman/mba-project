@@ -11,7 +11,6 @@ this.GetHtml = function (response, responseCloseCallback)
     html += '<link rel="icon" type="image/png" href="/resources/favicon.png">\n';
     html += '</head><body>\n';
 
-<<<<<<< Updated upstream
     // TODO - Add a dropdown for creating a new tests
     // TODO - Add hover text
     // TODO - make a better way to differentiate between flex/non-flex ?
