@@ -51,12 +51,12 @@ function GenerateItemHtml(test)
           ${ stepBlock }
         </ul>
       </div>
-      <div>
+ <!--     <div>
         <ul>
           ${ fixed_percent > 0 ? `<li class='fixedtime' style='flex: ${ fixed_percent }'>Fixed Time (${ fixed_percent }%)</li>` : ''}
           ${ flex_percent > 0 ? `<li class='flextime' style='flex: ${ flex_percent }'>Flex Time (${ flex_percent }%)</li>` : ''}
         </ul>
-      </div>
+      </div> -->
       <div class='totalTime'>Total Time: ${ GetPrettyDisplayTime(test.total_time) }</div>
     </div>
     `;

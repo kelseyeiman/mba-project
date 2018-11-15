@@ -1,11 +1,11 @@
 li[class^=test] {
     color: white;
-    /* filter: brightness(80%); */
+    filter: grayscale(100%);
 }
 
 li[class^=test].isflextime {
     color: black;
-    /* filter: brightness(120%); */
+    filter: brightness(120%);
 }
 
 li.test0 {
@@ -33,11 +33,11 @@ li.test5 {
 }
 
 li.test6 {
-    background-color: #ffac45;
+    background-color: #40d47e;
 }
 
 li.test7 {
-    background-color: #74283c;
+    background-color: #4F5D95;
 }
 
 li.test8 {
@@ -57,7 +57,7 @@ li.test11 {
 }
 
 li.test12 {
-    background-color: #74283c;
+    background-color: #40d47e;
 }
 
 li.test13 {
@@ -69,7 +69,7 @@ li.test14 {
 }
 
 li.test15 {
-    background-color: #2b7489;
+    background-color: #40d47e;
 }
 
 li.test16 {
@@ -85,11 +85,11 @@ li.test18 {
 }
 
 li.test19 {
-    background-color: #60B5CC;
+    background-color: #40d47e;
 }
 
 li.test20 {
-    background-color: #ffac45;
+    background-color: #563d7c;
 }
 
 li.test21 {
@@ -101,7 +101,7 @@ li.test22 {
 }
 
 li.test23 {
-    background-color: #cc0000;
+    background-color: #40d47e;
 }
 
 li.test24 {
