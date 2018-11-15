@@ -23,6 +23,15 @@ http.createServer((request, response) => {
         return response.end(content);
       });
     }
+    else if (request.url.toLowerCase().indexOf('.well-known') > -1)
+    {
+      var filePath = '.' + request.url;
+      fs.readFile(filePath, function(error, content)
+      {
+        response.writeHead(200, {'Content-type' : 'text/html'});
+        return response.end(content, 'utf-8');
+      });
+    }
     else
     {
       response.writeHead(200, {'Content-Type': 'text/html'});
