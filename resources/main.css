@@ -19,6 +19,8 @@ div.totalTime {
     padding: 14px 16px;
     text-decoration: none;
     background-color: #555555;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 ul {
@@ -35,7 +37,7 @@ ul {
 li {
     float: left;
     display: block;
-    padding: 14px 5px;
+    padding: 30px 5px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -59,17 +61,15 @@ li.flextime {
 .tooltip {
     position: relative;
     display: inline-block;
-    border-bottom: 1px dotted black;
 }
 
 .tooltip .tooltiptext {
     visibility: hidden;
-    width: 120px;
     background-color: black;
     color: #fff;
     text-align: center;
     border-radius: 6px;
-    padding: 5px 0;
+    padding: 5px 5px 5px 5px;
     position: absolute;
     z-index: 1;
     bottom: 100%;
@@ -86,5 +86,13 @@ li.flextime {
     opacity: 1;
 }
 
-
-
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}

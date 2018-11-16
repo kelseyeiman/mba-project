@@ -1,11 +1,16 @@
 li[class^=test] {
     color: white;
     filter: grayscale(100%);
+    border-style: solid;
+    border-color: black; 
 }
 
 li[class^=test].isflextime {
     color: black;
+    background-color: #40d47e;
     filter: brightness(120%);
+    border-style: solid;
+    border-color: black; 
 }
 
 li.test0 {

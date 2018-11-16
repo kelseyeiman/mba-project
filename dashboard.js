@@ -37,7 +37,7 @@ function GenerateItemHtml(test)
   {
       let listItem = steps[index];
       let stepColor = `test${ index }${listItem.flex_time ? ' isflextime' : ''}`;
-      stepBlock += `<li class='${ stepColor }' style='flex: ${ listItem.step_time }'> ${ listItem.step_description }</li>\n`;
+      stepBlock += `<li class='${ stepColor }' style='flex: ${ listItem.step_time }'> <div class="tooltip">${ listItem.step_description }<span class="tooltiptext">${ listItem.step_description }</span></div></li>\n`;
   }
 
   let flex_percent = Math.round(test.total_flextime / test.total_time * 100);
