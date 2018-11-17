@@ -96,3 +96,17 @@ li.flextime {
     border-style: solid;
     border-color: black transparent transparent transparent;
 }
+.Expanding {
+    transition:wide 0.3s ease-in-out;
+    -webkit-transition:width 0.3s ease-in-out;
+
+
+}
+
+
+.Expanding:hover {
+    width: 500px;
+    padding:0;
+    left:0;
+
+}

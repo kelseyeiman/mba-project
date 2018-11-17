@@ -9,6 +9,10 @@ this.GetHtml = function (response, responseCloseCallback)
     html += '<link rel="stylesheet" type="text/css" href="/resources/main.css">\n';
     html += '<link rel="stylesheet" type="text/css" href="/resources/colors.css">\n';
     html += '<link rel="icon" type="image/png" href="/resources/favicon.png">\n';
+    html += '<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">';
+    html += '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
+    html += '<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>';
+    html += `<script>$(document).ready(function(){ $('[data-toggle="tooltip"]').tooltip(); });</script>`;
     html += '</head><body>\n';
 
     // TODO - Add a dropdown for creating a new tests
@@ -37,7 +41,7 @@ function GenerateItemHtml(test)
   {
       let listItem = steps[index];
       let stepColor = `test${ index }${listItem.flex_time ? ' isflextime' : ''}`;
-      stepBlock += `<li class='${ stepColor }' style='flex: ${ listItem.step_time }'> <div class="tooltip">${ listItem.step_description }<span class="tooltiptext">${ listItem.step_description }</span></div></li>\n`;
+      stepBlock += `<li data-toggle="tooltip" title="${ listItem.step_description }" class='${ stepColor }' style='flex: ${ listItem.step_time }'>${ listItem.step_description }</li>\n`;
   }
 
   let flex_percent = Math.round(test.total_flextime / test.total_time * 100);
